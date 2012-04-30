@@ -76,3 +76,7 @@ rm -f AdditionalLanguages.plist
 # Copy in the xclangspecs for the languages (assumes in same directory as this shell script)
 #
 cp "$SCRIPT_PATH/ObjectiveJ.xclangspec" "$DVTFOUNDATION_PATH"
+
+# Remove any cached Xcode plugins
+#
+rm -f /private/var/folders/*/*/*/com.apple.DeveloperTools/*/Xcode/PlugInCache.xcplugincache
